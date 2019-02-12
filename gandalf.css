@@ -1,0 +1,71 @@
+body {
+  width: 1200px;
+  margin: auto;
+  border: solid 1px;
+}
+#main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.fellow {
+  position: relative;
+  border-color: black;
+  border: solid 1px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.fellow img {
+  position: relative;
+  opacity: 0.5;
+  width: 300px;
+  z-index: -1;
+}
+
+.fellower {
+  position: absolute;
+  color: black;
+  left: 18%;
+  background-color: lightgrey;
+  opacity: 0.8;
+  width: 200px;
+  height: 60px;
+  z-index: 1;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  border-color: black;
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+.fellower strong {
+  color: orange;
+}
+
+.namefellow {
+  position: absolute;
+  color: white;
+  left: 24%;
+  top: 30%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.fellow:hover img {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fellow:hover .namefellow {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  top: 70%;
+  left: 30%;
+  font-size: 30px;
+  text-align: center;
+}
